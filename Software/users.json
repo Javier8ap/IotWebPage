@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "email": "admin@iteso.mx",
+        "password": "admin",
+        "token": "oLM2G1jb4R-1"
+    },
+    {
+        "id": 2,
+        "email": "javier@iteso.mx",
+        "password": "quieromi6"
+    },
+    {
+        "id": 3,
+        "email": "lupita@iteso.mx",
+        "password": "porfaabrancalidad"
+    }
+]

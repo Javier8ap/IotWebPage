@@ -1,0 +1,63 @@
+###
+//Prueba
+GET https://api.thingspeak.com/channels/1040901/feeds.json
+
+
+###
+// Sign Up
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name":"Practica4new",
+    "email":"Practica4new@gmail.com",
+    "gender":"H",
+    "password":"password123"
+}
+
+###
+// Log In
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+	"email":"admin@iteso.mx",
+	"password":"admin"
+}
+
+###
+// Parte 1, lista de usuarios
+GET http://localhost:3000/api/users
+Content-Type: application/json
+x-auth-user: Y1vq606jTb-1 
+
+### 
+// Parte 2, usuario que contenga el query
+GET http://localhost:3000/api/users?name=dum
+Content-Type: application/json
+x-auth-user: Y1vq606jTb-1 
+
+// Parte 3 y 4 no realizadas
+
+###
+//GET, PUT, DELETE con parametro
+GET http://localhost:3000/api/users/admin@mail
+Content-Type: application/json
+x-auth-user: Y1vq606jTb-1
+
+###
+PUT http://localhost:3000/api/users/dummy@mail
+Content-Type: application/json
+x-auth-user: Y1vq606jTb-1
+
+{
+    "name":"dumy",
+    "email":"dummy@mail",
+    "gender":"H",
+    "password":"dummyNEW"
+}
+
+###
+DELETE http://localhost:3000/api/users/Practica4new@gmail.com
+Content-Type: application/json
+x-auth-user: Y1vq606jTb-1
