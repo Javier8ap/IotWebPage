@@ -8,7 +8,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
   <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
 
@@ -30,32 +30,37 @@
         </div>
     </div>
 </nav>
-<H2>Graficas</H2>
+
+<button type="button" class="btn" onclick="createCSV()">
+  <i class="fas fa-sign-in-alt"></i>
+  Descargar Historial
+</button>
+
+<H2>Graficas </H2>
+
+
 <div class="container pt-3">
   
   <h2>PH</h2>
   <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-  src="https://thingspeak.com/channels/1040901/widgets/172944"></iframe>
+  src="https://thingspeak.com/channels/1040901/widgets/173272"></iframe>
 
   <h2>Salinidad</h2>
   <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-  src="https://thingspeak.com/channels/1040901/widgets/172945"></iframe>
+  src="https://thingspeak.com/channels/1040901/widgets/173274"></iframe>
 
   <h2>Temperatura</h2>
   <iframe width="450" height="260" style="border: 1px solid #cccccc;" 
-  src="https://thingspeak.com/channels/1040901/widgets/172946"></iframe>
-
-
+  src="https://thingspeak.com/channels/1040901/widgets/173278"></iframe>
 
 </div> 
 
-    
 
     
     
 
 
- <script src="Front-End JS/index.js"></script>
+ <script src="JS/dashboard.js"></script>
 
 </body>
 </html>
